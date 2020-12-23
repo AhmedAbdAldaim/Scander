@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        >
+
+            <com.example.mainkotiln.text_slider_font
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/product_name"
+                android:gravity="center"
+                android:background="@color/bink"
+                android:layout_gravity="center"
+                android:textSize="23sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Suggestion"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                >
+            <com.example.mainkotiln.Edittext_font
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/edittext_suggestion"
+                android:paddingTop="10dp"
+                android:hint="Write Your Suuggestion ..."
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ed_sugg"
+                android:gravity="top"
+                />
+
+            </androidx.cardview.widget.CardView>
+            <com.example.mainkotiln.button_slider_font
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Send"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_suggestion"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

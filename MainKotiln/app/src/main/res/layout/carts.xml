@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        >
+        <com.example.mainkotiln.text_slider_font
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/product_name"
+            android:gravity="center"
+            android:background="@color/bink"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Carts"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="0dp"
+                android:layout_alignParentRight="true"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+
+                        >
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/lay_count1">
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price_name1"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Price"
+                                    />
+                                <com.example.mainkotiln.text_slider_font1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price1"
+                                    android:gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text=" 440 SD"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="right">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/doretouos"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/product_image1"/>
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/product_name1"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Big Dorutous"
+                                    >
+                                </com.example.mainkotiln.text_slider_font>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/lay_count1"
+
+                                >
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/count_name1"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Quantity"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/plus1"
+                                        android:onClick="plus"
+                                        android:src="@drawable/ic_plus">
+                                    </ImageView>
+
+                                    <com.example.mainkotiln.text_slider_font1
+                                        android:id="@+id/count1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textStyle="bold">
+
+                                    </com.example.mainkotiln.text_slider_font1>
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/mins1"
+                                        android:onClick="mins"
+                                        android:src="@drawable/ic_minus">
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_delete_forever_black_24dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+
+                        >
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/lay_count2">
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price_name2"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Price"
+                                    />
+                                <com.example.mainkotiln.text_slider_font1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price2"
+                                    android:gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text=" 200 SD"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="right">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/swiet"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/product_image2"/>
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/product_name2"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Twiex"
+                                    >
+                                </com.example.mainkotiln.text_slider_font>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/lay_count2"
+
+                                >
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/count_name2"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Quantity"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/plus2"
+                                        android:onClick="plus"
+                                        android:src="@drawable/ic_plus">
+                                    </ImageView>
+
+                                    <com.example.mainkotiln.text_slider_font1
+                                        android:id="@+id/count2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textStyle="bold">
+
+                                    </com.example.mainkotiln.text_slider_font1>
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/mins2"
+                                        android:onClick="mins"
+                                        android:src="@drawable/ic_minus">
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_delete_forever_black_24dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+
+                        >
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/lay_count3">
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price_name3"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Price"
+                                    />
+                                <com.example.mainkotiln.text_slider_font1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price3"
+                                    android:gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text=" 1040 SD"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="right">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/gift"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/product_image3"/>
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/product_name3"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Watch"
+                                    >
+                                </com.example.mainkotiln.text_slider_font>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/lay_count3"
+
+                                >
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/count_name3"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Quantity"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/plus3"
+                                        android:onClick="plus"
+                                        android:src="@drawable/ic_plus">
+                                    </ImageView>
+
+                                    <com.example.mainkotiln.text_slider_font1
+                                        android:id="@+id/count3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textStyle="bold">
+
+                                    </com.example.mainkotiln.text_slider_font1>
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/mins3"
+                                        android:onClick="mins"
+                                        android:src="@drawable/ic_minus">
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_delete_forever_black_24dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+
+                        >
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/lay_count4">
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price_name4"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Price"
+                                    />
+                                <com.example.mainkotiln.text_slider_font1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price4"
+                                    android:gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text=" 440 SD"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="right">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/doretouos"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/product_image4"/>
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/product_name4"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Big Dorutous"
+                                    >
+                                </com.example.mainkotiln.text_slider_font>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/lay_count4"
+
+                                >
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/count_name4"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Quantity"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/plus4"
+                                        android:onClick="plus"
+                                        android:src="@drawable/ic_plus">
+                                    </ImageView>
+
+                                    <com.example.mainkotiln.text_slider_font1
+                                        android:id="@+id/count4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:textSize="15sp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textStyle="bold">
+
+                                    </com.example.mainkotiln.text_slider_font1>
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/mins4"
+                                        android:onClick="mins"
+                                        android:src="@drawable/ic_minus">
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_delete_forever_black_24dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+
+                        >
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/lay_count5">
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price_name5"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Price"
+                                    />
+                                <com.example.mainkotiln.text_slider_font1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price5"
+                                    android:gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text=" 440 SD"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="right">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/doretouos"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/product_image5"/>
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/product_name5"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Big Dorutous"
+                                    >
+                                </com.example.mainkotiln.text_slider_font>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/lay_count5"
+
+                                >
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/count_name5"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Quantity"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/plus5"
+                                        android:onClick="plus"
+                                        android:src="@drawable/ic_plus">
+                                    </ImageView>
+
+                                    <com.example.mainkotiln.text_slider_font1
+                                        android:id="@+id/count5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textColor="#000"
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textStyle="bold">
+
+                                    </com.example.mainkotiln.text_slider_font1>
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/mins5"
+                                        android:onClick="mins"
+                                        android:src="@drawable/ic_minus">
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_delete_forever_black_24dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+
+                        >
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/lay_count6">
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price_name6"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Price"
+                                    />
+                                <com.example.mainkotiln.text_slider_font1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/price6"
+                                    android:gravity="center"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text=" 440 SD"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="right">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/doretouos"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/product_image6"/>
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/product_name6"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Big Dorutous"
+                                    >
+                                </com.example.mainkotiln.text_slider_font>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/lay_count6"
+
+                                >
+                                <com.example.mainkotiln.text_slider_font
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/count_name6"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/bink"
+                                    android:textStyle="bold"
+                                    android:text="Quantity"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/plus6"
+                                        android:onClick="plus"
+                                        android:src="@drawable/ic_plus">
+                                    </ImageView>
+
+                                    <com.example.mainkotiln.text_slider_font1
+                                        android:id="@+id/count6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textStyle="bold">
+
+                                    </com.example.mainkotiln.text_slider_font1>
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/mins6"
+                                        android:onClick="mins"
+                                        android:src="@drawable/ic_minus">
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_delete_forever_black_24dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <com.example.mainkotiln.text_slider_font1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300 SD"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+                        <com.example.mainkotiln.text_slider_font
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery : "
+                            android:textSize="16sp"
+                            android:textColor="@color/bink"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/cardtotal"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        >
+                        <com.example.mainkotiln.text_slider_font1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2300 SD"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+                        <com.example.mainkotiln.text_slider_font
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total : "
+                            android:textSize="20sp"
+                            android:textColor="@color/bink"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.mainkotiln.button_slider_font
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bink"
+            android:text="Confirmation"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:lastBaselineToBottomHeight="@dimen/cardview_compat_inset_shadow"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="0dp"
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
