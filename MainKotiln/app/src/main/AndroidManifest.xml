@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme1">
 
-        <activity android:name=".detiles_order"></activity>
-        <activity android:name=".Order" />
-        <activity android:name=".chipes" />
-        <activity android:name=".chipes_big" />
-        <activity android:name=".select_chipess_type" />
-        <activity android:name=".Singup" />
-        <activity android:name=".Main" />
-        <activity android:name=".Login" />
-        <activity android:name=".Carts" />
-        <activity android:name=".fragmentHome" />
-        <activity android:name=".Splashscreen">
+        <activity android:name=".Pages.detiles_order"></activity>
+        <activity android:name=".Pages.Order" />
+        <activity android:name=".Pages.chipes" />
+        <activity android:name=".Pages.chipes_big" />
+        <activity android:name=".Pages.select_chipess_type" />
+        <activity android:name=".Pages.Singup" />
+        <activity android:name=".Pages.Main" />
+        <activity android:name=".Pages.Login" />
+        <activity android:name=".Pages.Carts" />
+        <activity android:name=".Fragments.fragmentHome" />
+        <activity android:name=".Pages.Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

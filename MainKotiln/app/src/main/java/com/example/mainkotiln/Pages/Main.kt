@@ -1,11 +1,11 @@
-package com.example.mainkotiln
+package com.example.mainkotiln.Pages
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
-import com.example.mainkotiln.R
+import com.example.mainkotiln.*
+import com.example.mainkotiln.Fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 

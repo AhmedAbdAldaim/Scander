@@ -1,4 +1,4 @@
-package com.example.mainkotiln
+package com.example.mainkotiln.Pages
 
 import android.content.Intent
 import android.os.Bundle

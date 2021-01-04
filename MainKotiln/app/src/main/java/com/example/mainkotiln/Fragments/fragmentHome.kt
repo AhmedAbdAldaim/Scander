@@ -1,7 +1,6 @@
-package com.example.mainkotiln
+package com.example.mainkotiln.Fragments
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,14 +12,18 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mainkotiln.Adapters.Sale_offers_Adapter
+import com.example.mainkotiln.Pages.Carts
+import com.example.mainkotiln.Pages.select_chipess_type
+import com.example.mainkotiln.R
 
 @Suppress("UNREACHABLE_CODE")
 class fragmentHome : Fragment() {
 
     private var layoutManager: RecyclerView.LayoutManager?=null
-    private  var adapter: RecyclerView.Adapter<Mainadapteview.ViewHolder>?=null
+    private  var adapter: RecyclerView.Adapter<Sale_offers_Adapter.ViewHolder>?=null
 
-  lateinit var rce: RecyclerView
+  lateinit var recyclerView: RecyclerView
     lateinit var  carts: ImageView
     lateinit var card_chipess :CardView
 
@@ -31,15 +34,16 @@ class fragmentHome : Fragment() {
     ): View? {
         val view: View = inflater.inflate(R.layout.fargment_home, container, false)
 
-        rce = view.findViewById(R.id.rce) as RecyclerView
+        recyclerView = view.findViewById(R.id.rce) as RecyclerView
         carts = view.findViewById(R.id.carts) as ImageView
         card_chipess = view.findViewById(R.id.card_chipess) as CardView
 
         val linearLayoutManage: LinearLayoutManager = GridLayoutManager(activity, 2)
         layoutManager = LinearLayoutManager(activity)
-        rce.layoutManager = linearLayoutManage
-        adapter = Mainadapteview()
-        rce.adapter = adapter
+
+        recyclerView.layoutManager = linearLayoutManage
+        adapter = Sale_offers_Adapter()
+        recyclerView.adapter = adapter
 
         carts.setOnClickListener {
             val intent = Intent(activity, Carts::class.java)
@@ -57,7 +61,7 @@ class fragmentHome : Fragment() {
 
 
     companion object{
-        fun newInstance() : fragmentHome{
+        fun newInstance() : fragmentHome {
             return fragmentHome()
         }
     }

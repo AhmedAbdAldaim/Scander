@@ -1,20 +1,18 @@
-package com.example.mainkotiln
+package com.example.mainkotiln.Fragments
 
 import android.content.Context
-import com.example.mainkotiln.R
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.mainkotiln.Order
-import java.util.*
+import com.example.mainkotiln.Pages.Order
+import com.example.mainkotiln.R
 
 
 class fragmentUser : Fragment() {
@@ -57,7 +55,7 @@ class fragmentUser : Fragment() {
         return view
     }
     companion object{
-        fun newInstance() : fragmentUser{
+        fun newInstance() : fragmentUser {
             return fragmentUser()
         }
     }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".Login">
+    tools:context=".Pages.Login">
 
 
     <RelativeLayout
@@ -41,11 +41,12 @@
                 app:cardCornerRadius="30dp"
                 android:layout_marginTop="-10dp"
                 >
-                <com.example.mainkotiln.Edittext_font
+                <EditText
                     android:layout_width="360dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/ed_phone"
                     android:inputType="phone"
+                    android:fontFamily="@font/pnu_medium"
                     android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
                     android:drawablePadding="10dp"
                     android:paddingLeft="15dp"
@@ -54,7 +55,7 @@
                     android:outlineAmbientShadowColor="@color/yeloow"
                     android:gravity="left"
                     android:background="@drawable/edittext_login"
-                    android:hint="Phone Number"
+                    android:hint="@string/phone_number_hint"
                     />
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -68,16 +69,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     >
-                    <com.example.mainkotiln.Edittext_font
+                    <EditText
                         android:layout_width="360dp"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
                         android:id="@+id/ed_password"
+                        android:fontFamily="@font/pnu_medium"
                         android:drawablePadding="10dp"
                         android:paddingLeft="50dp"
                         android:gravity="left"
                         android:background="@drawable/edittext_login"
-                        android:hint="Password"
+                        android:hint="@string/Password_hint"
                         />
 
                 </LinearLayout>
@@ -100,12 +102,13 @@
                 android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/bink"
                 >
-                <com.example.mainkotiln.button_slider_font
+                <Button
                     android:layout_width="360dp"
                     android:layout_height="50dp"
                     android:id="@+id/button_login"
+                    android:fontFamily="@font/pnu_medium"
                     android:background="@drawable/button_login"
-                    android:text="Login"
+                    android:text="@string/Login"
                     android:textSize="20dp"
                     android:onClick="login"
                     android:textColor="@color/white"
@@ -120,21 +123,24 @@
                 android:gravity="center"
                 >
 
-                <com.example.mainkotiln.text_slider_font
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/r"
-                    android:text=" Are You Hava Any Acount?  "
+                    android:id="@+id/register"
+                    android:fontFamily="@font/pnu_medium"
+                    android:text="@string/Any_Acoound"
+                    android:layout_marginRight="5dp"
                     android:layout_gravity="left"
                     android:gravity="left"
                     android:textColor="#fff"
                     />
-                <com.example.mainkotiln.text_slider_font
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textbut_reg"
+                    android:fontFamily="@font/pnu_medium"
                     android:layout_gravity="left"
-                    android:text="Regisiter Now!"
+                    android:text="@string/Register_now"
                     android:textColor="@color/white"
                     android:gravity="left"
                     android:onClick="reg"

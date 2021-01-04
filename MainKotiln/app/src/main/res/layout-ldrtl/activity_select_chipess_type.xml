@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".select_chipess_type">
+    tools:context=".Pages.select_chipess_type">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,17 +12,17 @@
         android:orientation="vertical"
         android:layout_marginBottom="30dp"
         >
-        <com.example.mainkotiln.text_slider_font
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/product_name"
             android:gravity="center"
+            android:fontFamily="@font/ge_ss_two_medium"
             android:background="@color/bink"
             android:layout_gravity="center"
             android:textSize="23sp"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:text="اختر نوعك"
+            android:text="@string/Select_Type_ar"
             android:layout_marginBottom="20dp"
             />
 
@@ -54,22 +54,22 @@
                         android:layout_marginTop="0dp"
                         android:onClick="big_dort"
                         android:layout_gravity="center"
-                        android:id="@+id/imgjk"/>
-                    <com.example.mainkotiln.text_slider_font
+                        android:id="@+id/Image_Big"/>
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/txtt"
+                        android:id="@+id/Big_size"
+                        android:fontFamily="@font/ge_ss_two_medium"
                         android:gravity="center"
                         android:onClick="big_dort"
                         android:layout_marginTop="5dp"
                         android:textSize="24sp"
                         android:textColor="@color/white"
                         android:background="@color/bink"
-                        android:textStyle="bold"
-                        android:text="كرتونة"
+                        android:text="@string/Big_ar"
                         >
 
-                    </com.example.mainkotiln.text_slider_font>
+                    </TextView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -93,22 +93,22 @@
                         android:layout_marginTop="0dp"
                         android:layout_gravity="center"
                         android:onClick="smail_dort"
-                        android:id="@+id/doret_chipes"/>
-                    <com.example.mainkotiln.text_slider_font
+                        android:id="@+id/image_smail"/>
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/txtt"
+                        android:id="@+id/smail_size"
                         android:gravity="center"
+                        android:fontFamily="@font/ge_ss_two_medium"
                         android:onClick="smail_dort"
                         android:layout_marginTop="5dp"
                         android:textSize="24sp"
                         android:background="@color/bink"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:text="حبة"
+                        android:text="@string/Samil_ar"
                         >
 
-                    </com.example.mainkotiln.text_slider_font>
+                    </TextView>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

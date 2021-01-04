@@ -1,4 +1,4 @@
-package com.example.mainkotiln
+package com.example.mainkotiln.Pages
 
 import android.content.Intent
 import android.os.Bundle
@@ -16,7 +16,9 @@ class Splashscreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscreen)
         imageView = findViewById<View>(R.id.img) as ImageView
-        val animation = AnimationUtils.loadAnimation(this, R.anim.anim_splashscreen)
+        val animation = AnimationUtils.loadAnimation(this,
+            R.anim.anim_splashscreen
+        )
         imageView!!.animation = animation
         val thread: Thread = object : Thread() {
             override fun run() {

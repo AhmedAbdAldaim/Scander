@@ -1,6 +1,101 @@
 <resources>
     <string name="app_name">MainKotiln</string>
 
+
+    //layout Login And Registier
+    <string name="Login">Login</string>
+    <string name="Any_Acoound">Are You Hava Any Acount? </string>
+    <string name="Register_now"> Register Now !</string>
+    <string name="Login_ar">تسجيل الدخول</string>
+    <string name="Register"> Register </string>
+    <string name="Register_ar">تسجيل </string>
+    <string name="Any_Acoound_ar">ليس لديك حساب   </string>
+    <string name="Register_now_ar">  تسجيل الان ! </string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="Password_hint">Password</string>
+    <string name="confirm_Password_hint">Password</string>
+    <string name="name_hint">Name</string>
+    <string name="name_hint_ar">الاسم</string>
+    <string name="phone_number_hint_ar">رقم الهاتف</string>
+    <string name="Password_hint_ar">كلمة المرور</string>
+    <string name="confirm_Password_hint_ar">تأكيد كلمة المرور</string>
+
+
+    //Layout Home
+    <string name="Hallo"> Hallo Ahmed  </string>
+    <string name="Sale_Offers"> #Sale Offers </string>
+    <string name="Search_hint"> Search  </string>
+    <string name="Chipes"> Chipes  </string>
+    <string name="Swites"> Sweets  </string>
+    <string name="Gift"> Gift  </string>
+    <string name="Hallo_ar"> مرحبا احمد  </string>
+    <string name="Sale_Offers_ar"> #عروض التخفيضات </string>
+    <string name="Search_hint_ar"> بحث  </string>
+    <string name="Chipes_ar"> شيبس  </string>
+    <string name="Swites_ar"> حلويات  </string>
+    <string name="Gift_ar"> هدايا  </string>
+
+    //Layout favorite
+    <string name="favorite_List"> favorite List  </string>
+    <string name="favorite_List_ar"> قائمة المفضلة  </string>
+
+    //Layout Suggestion
+    <string name="Suggestion"> Suggestion   </string>
+    <string name="Suggestion_ar"> الاقتراحات   </string>
+    <string name="Commmnd_hint"> Write Your Suuggestion ...   </string>
+    <string name="Commmnd_ar_hint"> اكتب اقتراح او تعليق او شكوى ...   </string>
+    <string name="Send_ar"> ارسال  </string>
+    <string name="Send"> Send  </string>
+
+    //Layout Select Type
+    <string name="Select_Type"> Select Type  </string>
+    <string name="Select_Type_ar"> اختر نوعك  </string>
+    <string name="Big"> Big Size   </string>
+    <string name="Smail"> Smail Size  </string>
+    <string name="Big_ar"> كرتونة   </string>
+    <string name="Samil_ar"> حبة  </string>
+
+    //Layout Chipes
+    <string name="Select_Chipes"> Select Chipes  </string>
+    <string name="Select_Chipes_ar"> اختر شبسيك  </string>
+
+    //Layout_order
+    <string name="Orders">Orders</string>
+    <string name="Orders_ar">قائمة الطلبات</string>
+    <string name="Status">Status</string>
+    <string name="Status_ar">الحالة</string>
+    <string name="Order_det">Orders Detailes </string>
+    <string name="Order_det_ar">تفاصيل الطلب</string>
+
+    //Layout_order_details
+    <string name="Order_Detils"> Order Detils  </string>
+    <string name="Order_Detils_ar"> تفاصيل الطلب </string>
+    <string name="date"> 2-12-2020</string>
+    <string name="Date">Date : </string>
+    <string name="Total">Total : </string>
+    <string name="total">2300 SD  </string>
+    <string name="Dilivey">Delivery : </string>
+    <string name="Dilivey_ar">التوصيل : </string>
+    <string name="Dilivey1">300 SD </string>
+    <string name="Dilivey1_ar">300 ج.س </string>
+    <string name="date1"> 2-12-2020</string>
+    <string name="Date1">التاريخ : </string>
+    <string name="Total1">المجموع : </string>
+    <string name="total1">2300 ج.س  </string>
+    <string name="Quintity"> Quintity   </string>
+    <string name="Quintity_ar"> الكمية   </string>
+    <string name="Price"> Price   </string>
+    <string name="Price_ar"> السعر   </string>
+    --
+    //Carts
+    <string name="Carts">Carts  </string>
+    <string name="Carts_ar">قائمة السلة  </string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="Confirmation_ar">تأكيد الطلب</string>
+    //
+    <string name="Add_Cart">  Add TO cart </string>
+    <string name="Add_Cart_ar">  اضافة الى السلة </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
